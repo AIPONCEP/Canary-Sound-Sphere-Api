@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CanarysoundsphereapiApplication<canarysoundsphereapi>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.api.canarysoundsphereapi.CanarysoundsphereapiApplication",
+            "projectName": "canarysoundsphereapi",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
