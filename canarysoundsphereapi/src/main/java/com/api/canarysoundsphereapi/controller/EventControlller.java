@@ -18,12 +18,16 @@ import com.api.canarysoundsphereapi.model.UpdateResponse;
 import com.api.canarysoundsphereapi.payload.response.MessageResponse;
 import com.api.canarysoundsphereapi.services.EventService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 /**
  * Controlador para la gestión de eventos.
  */
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/events")
+@Tag(name = "Events resource")
 public class EventControlller {
 
     @Autowired
@@ -34,6 +38,7 @@ public class EventControlller {
      * 
      * @return Devuelve una lista de todos los eventos.
      */
+    @Operation(summary = "Get all events")
     @GetMapping()
     public ArrayList<Event> getAllEvents() {
         return eventService.getAllEvents();
@@ -45,6 +50,7 @@ public class EventControlller {
      * @param id
      * @return Devuelve el evento en funcion del id enviado si lo encuentra
      */
+    @Operation(summary = "Get event by id")
     @GetMapping("/{id}")
     public Optional<Event> findById(@PathVariable("id") String id) {
         return eventService.findById(id);

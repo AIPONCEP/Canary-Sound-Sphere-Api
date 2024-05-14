@@ -62,30 +62,33 @@ public class WebSecurityConfig {
   public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
     http.csrf(csrf -> csrf.disable()) // Deshabilita la protección CSRF
         // Maneja las excepciones de autenticación
-        .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler)) 
+        .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
         // Configura la gestión de sesiones
-        .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)) 
+        .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
         .authorizeHttpRequests(auth -> auth // Permite el acceso a rutas de autenticación
-       
-            .requestMatchers(HttpMethod.POST,"/events").hasRole("ADMIN")
-            .requestMatchers(HttpMethod.PUT, "/events/{id}").hasRole("ADMIN")
-            .requestMatchers(HttpMethod.DELETE,"/events/{id}").hasRole("ADMIN")
-            .requestMatchers(HttpMethod.GET,"/events").permitAll()
-            .requestMatchers(HttpMethod.GET,"/events/{id}").permitAll()
 
-            .requestMatchers(HttpMethod.POST,"/authors").hasRole("ADMIN")
+            .requestMatchers(HttpMethod.POST, "/events").hasRole("ADMIN")
+            .requestMatchers(HttpMethod.PUT, "/events/{id}").hasRole("ADMIN")
+            .requestMatchers(HttpMethod.DELETE, "/events/{id}").hasRole("ADMIN")
+            .requestMatchers(HttpMethod.GET, "/events").permitAll()
+            .requestMatchers(HttpMethod.GET, "/events/{id}").permitAll()
+
+            .requestMatchers(HttpMethod.POST, "/authors").hasRole("ADMIN")
             .requestMatchers(HttpMethod.PUT, "/authors/{id}").hasRole("ADMIN")
-            .requestMatchers(HttpMethod.DELETE,"/authors/{id}").hasRole("ADMIN")
-            .requestMatchers(HttpMethod.GET,"/authors").permitAll()
-            .requestMatchers(HttpMethod.GET,"/authors/{id}").permitAll() 
+            .requestMatchers(HttpMethod.DELETE, "/authors/{id}").hasRole("ADMIN")
+            .requestMatchers(HttpMethod.GET, "/authors").permitAll()
+            .requestMatchers(HttpMethod.GET, "/authors/{id}").permitAll()
+
+            .requestMatchers("/api-doc/**").permitAll()
 
             .requestMatchers("/api/auth/**").permitAll()
-         
+
             .anyRequest().authenticated()); // Requiere autenticación para cualquier otra solicitud
 
     http.authenticationProvider(authenticationProvider()); // Configura el proveedor de autenticación
 
-    http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class); // Agrega el filtro de tokens JWT antes del filtro de usuario y contraseña
+    // Agrega el filtro de tokens JWT antes del filtro de usuario y contraseña
+    http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
 
     return http.build(); // Devuelve la cadena de filtros de seguridad configurada
   }
