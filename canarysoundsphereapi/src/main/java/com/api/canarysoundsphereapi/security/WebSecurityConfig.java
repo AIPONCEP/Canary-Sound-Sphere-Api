@@ -79,7 +79,7 @@ public class WebSecurityConfig {
             .requestMatchers(HttpMethod.GET, "/authors").permitAll()
             .requestMatchers(HttpMethod.GET, "/authors/{id}").permitAll()
 
-            .requestMatchers("/api-doc/**").permitAll()
+            .requestMatchers("/swagger-ui.html", "/swagger-ui/**", "/v3/api-docs/**").permitAll()
 
             .requestMatchers("/api/auth/**").permitAll()
 

@@ -4,12 +4,14 @@ use CanarySoundSphere
 // Creación de la colección "events"
 db.createCollection("events")
 
+//NOTA: Para el name max 24 caract.
+
 // Inserción de datos en la colección "events"
 db.events.insertMany([  
   {
     "_id": "0001",
-    "logo": "grancalivefestUrlImage",
-    "image": "grancalivefestUrlImage2",
+    "logo": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/GrancaLiveFestLogo.jpg",
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/GrancaLiveFest.jpg",
     "name": "Granca Live Fest 2024",
     "date": "4, 5 y 6 de Julio",
     "time": "15:00 23:00",
@@ -21,9 +23,9 @@ db.events.insertMany([
   },
   {
     "_id": "0002",
-    "logo": "TenerifeMusicFestivalUrlImage",
-    "image": "TenerifeMusicFestivalUrlImage2",
-    "name": "Tenerife Music Festival 2024",
+    "logo": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/GrancaLiveFestLogo.jpg",
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/GrancaLiveFest.jpg",
+    "name": "Tenerife Music Festival",
     "date": "8 y 9 de Junio",
     "time": "15:00 23:00",
     "capacity": 10000,
@@ -34,9 +36,9 @@ db.events.insertMany([
   },
   {
     "_id": "0003",
-    "logo": "fiestoronUrlImage",
-    "image": "fiestoronUrlImage2",
-    "name": "Fiestoron 2024. 7º edición", 
+    "logo": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/GrancaLiveFestLogo.jpg",
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/GrancaLiveFest.jpg",
+    "name": "Fiestoron 2024", 
     "date": "9 y 10 de Agosto",
     "time": "18:00 horas", 
     "capacity": 8000,
@@ -55,7 +57,7 @@ db.authors.insertMany([
    {
     "_id": "0001",
     "name": "Estopa",
-    "image": "estopaUrlImage", 
+    "image": "https://github.com/JDxy/Canary-Sphere-Sound-App-Images/blob/main/author/estopa.jpg", 
     "foundation_year": 1999, 
     "music_type": "Rumba, Flamenco y Pop Rock",   
     "description": "Estopa es un dúo español de rumba catalana formado por los hermanos David y José Manuel Muñoz. Creado el 18 de octubre de 1999, el grupo es natural de la ciudad de Cornellà de Llobregat, Provincia de Barcelona.​ Con su primer disco consiguieron ventas superiores a 1.000.000 de copias, logrando así el reconocimiento en su país natal y después en países americanos como Chile, Argentina, México, Colombia y Venezuela. Han vendido más de 4 millones de discos en el ámbito nacional e internacional.",
@@ -66,14 +68,14 @@ db.authors.insertMany([
     "name": "La Oreja de Van Gogh",
     "image": "vanGoghUrlImage", 
     "foundation_year": 1996, 
-    "music_type": "Pop, pop rock, electropop, balada ",   
+    "music_type": "Pop, pop rock, electro pop, balada",   
     "description": "La Oreja de Van Gogh es un grupo musical de género pop rock originario de San Sebastián, País Vasco, España. Su trayectoria en el mundo de la música comenzó formalmente en 1996. La banda está formada por Pablo Benegas, Álvaro Fuentes, Xabi San Martín, Haritz Garde y Leire Martínez, aunque la vocalista durante los primeros once años fue Amaia Montero, quien en 2007 dejó la formación para iniciar su carrera como solista.",
     "music_list": "https://open.spotify.com/search/la%20orjea%20de%20van%20gogh"
   },
   {
     "_id": "0003",
-    "name": " Pignoise",
-    "image": " pignoiseUrlImage", 
+    "name": "Pignoise",
+    "image": "pignoiseUrlImage", 
     "foundation_year": 2002, 
     "music_type": "Pop punk",   
     "description": "Pignoise es una banda de pop punk originaria de Madrid, España, formada en el año 2002. La banda está compuesta por Álvaro Benito, Pablo Alonso y Héctor Polo. Se dieron a conocer en la escena musical española con su álbum debut 'Anunciado en Televisión' en 2003, el cual incluía éxitos como 'Nada que perder' y 'Te entiendo'. A lo largo de su carrera, Pignoise ha mantenido un sonido característico que combina melodías pegajosas con letras directas y emotivas. Aunque han tenido cambios en su formación y han explorado diferentes estilos musicales, continúan siendo reconocidos por su energía en el escenario y su conexión con el público.",
