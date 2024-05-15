@@ -27,7 +27,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/events")
-@Tag(name = "Events resource")
+@Tag(name = "Events resource", description = "Operations related to events management")
 public class EventControlller {
 
     @Autowired
@@ -38,7 +38,7 @@ public class EventControlller {
      * 
      * @return Devuelve una lista de todos los eventos.
      */
-    @Operation(summary = "Get all events")
+    @Operation(summary = "Get all events", description = "Retrieves a list of all events.")
     @GetMapping()
     public ArrayList<Event> getAllEvents() {
         return eventService.getAllEvents();
@@ -50,7 +50,7 @@ public class EventControlller {
      * @param id
      * @return Devuelve el evento en funcion del id enviado si lo encuentra
      */
-    @Operation(summary = "Get event by id")
+    @Operation(summary = "Get event by id", description = "Finds an event by its ID.")
     @GetMapping("/{id}")
     public Optional<Event> findById(@PathVariable("id") String id) {
         return eventService.findById(id);
@@ -62,6 +62,7 @@ public class EventControlller {
      * @param event
      * @return Devuelve el evento creado
      */
+    @Operation(summary = "Create a new event", description = "Creates a new event and returns the created event.")
     @PostMapping("")
     public ResponseEntity<?> postEvent(@RequestBody Event event) {
         eventService.postEvent(event);
@@ -74,6 +75,7 @@ public class EventControlller {
      * @param id
      * @return Devuelve un mensaje de confirmación de la eliminación con el id
      */
+    @Operation(summary = "Delete an event", description = "Deletes an event by its ID and returns a confirmation message.")
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteEvent(@PathVariable("id") String id) {
         eventService.deleteEvent(id);
@@ -88,6 +90,7 @@ public class EventControlller {
      * @return Devuelve un mensaje con el id del evento
      *         que se actualizo y un json con la información del objeto actualizado
      */
+    @Operation(summary = "Update an event", description = "Updates an existing event by its ID and returns the updated event.")
     @PutMapping("/{id}")
     public ResponseEntity<?> updateEvent(@PathVariable("id") String id, @RequestBody Event event) {
         eventService.updateEvent(id, event);

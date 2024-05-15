@@ -30,9 +30,13 @@ import com.api.canarysoundsphereapi.repositories.UserRepository;
 import com.api.canarysoundsphereapi.security.jwt.JwtUtils;
 import com.api.canarysoundsphereapi.security.services.UserDetailsImpl;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/auth")
+@Tag(name = "Auth resource", description = "Operations related to user authentication and registration")
 public class AuthController {
     @Autowired
     AuthenticationManager authenticationManager;
@@ -51,6 +55,7 @@ public class AuthController {
 
     // Maneja las solicitudes de autenticación de usuarios
     @PostMapping("/signin")
+    @Operation(summary = "User login", description = "Authenticates a user and returns a JWT token and user details.")
     public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginRequest loginRequest) {
 
         Authentication authentication = authenticationManager.authenticate(
@@ -73,6 +78,7 @@ public class AuthController {
 
     // Maneja las solicitudes de registro de nuevos usuarios
     @PostMapping("/signup")
+    @Operation(summary = "User registration", description = "Registers a new user and returns a confirmation message.")
     public ResponseEntity<?> registerUser(@Valid @RequestBody SignupRequest signUpRequest) {
         if (userRepository.existsByUsername(signUpRequest.getUsername())) {
             return ResponseEntity
