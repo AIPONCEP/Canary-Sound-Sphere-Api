@@ -14,35 +14,39 @@ db.events.insertMany([
     "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/GrancaLiveFest.jpg",
     "name": "Granca Live Fest 2024",
     "date": "4, 5 y 6 de Julio",
-    "time": "15:00 23:00",
+    "time": "15:00 - 23:00",
     "capacity": 10000,
-    "description": "Día 4: Robbie Williams, Pedro Capó y Pedro Pastor. Día 5: Black Eyed Peas, Mora, Juanes, Melendi, Álvaro de Luna y Nia. Día 6: Maná, Estopa, Jhayco, Christian Nodal, Cruz Cafuné y Kany García.",
+    "description": "Día 4: Robbie Williams, Pedro Capó y Pedro Pastor.
+    Día 5: Black Eyed Peas, Mora, Juanes, Melendi, Álvaro de Luna y Nia. 
+    Día 6: Maná, Estopa, Jhayco, Christian Nodal, Cruz Cafuné y Kany García.",
     "direction": "c/ Fondos de Segura, s/n 35019, Las Palmas de Gran Canaria, Las Palmas",
     "marker": "28.103098034773886, -15.456542751641871",
     "ticket_store": "https://gclivefest.es/es-es/entradas"
   },
   {
     "_id": "0002",
-    "logo": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/GrancaLiveFestLogo.jpg",
-    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/GrancaLiveFest.jpg",
+    "logo": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/tenerifeMusicFestivalLogo.jpg",
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/tenerifeMusicFestival.jpg",
     "name": "Tenerife Music Festival",
     "date": "8 y 9 de Junio",
-    "time": "15:00 23:00",
+    "time": "15:00 - 23:00",
     "capacity": 10000,
-    "description": "Día 8: Marc Anthony, Efecto Pasillo, St. Pedro y Real el Canario. Día 9: Mikel Izal, La Oreja de Van Gogh, Rozalén, Delaporte, Vetusta Morla. ¡Más artistas por confirmar!",
+    "description": "Día 8: Marc Anthony, Efecto Pasillo, St. Pedro y Real el Canario. 
+    Día 9: Mikel Izal, La Oreja de Van Gogh, Rozalén, Delaporte, Vetusta Morla. ¡Más artistas por confirmar!",
     "direction": "Dársena de los Llanos, Marina Santa Cruz, 38001 · Santa Cruz de Tenerife",
     "marker": "28,466812, -16,245360",
     "ticket_store": "https://tenerifemusicfestival.es/"
   },
   {
     "_id": "0003",
-    "logo": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/GrancaLiveFestLogo.jpg",
-    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/GrancaLiveFest.jpg",
+    "logo": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/fiestoronLogo.jpg",
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/events/fiestoron.jpg",
     "name": "Fiestoron 2024", 
     "date": "9 y 10 de Agosto",
     "time": "18:00 horas", 
     "capacity": 8000,
-    "description": "Día 9: Sober + Savia + Skizoo, Reincidentes, Celtas Cortos, Mojinos Escozíos, La Cabra Mecánica. Día 10: Efecto Pasillo, La Pegatina, Pignoise, Nena Daconte, Café Quijano.",
+    "description": "Día 9: Sober + Savia + Skizoo, Reincidentes, Celtas Cortos, Mojinos Escozíos, La Cabra Mecánica. 
+    Día 10: Efecto Pasillo, La Pegatina, Pignoise, Nena Daconte, Café Quijano.",
     "direction": "Ctra. del Lomo, S/N, 35400 Arucas, Las Palmas",
     "marker": "28.117877419165055, -15.5223557644181",
     "ticket_store": "https://fiestoron.com/"
@@ -59,27 +63,90 @@ db.authors.insertMany([
     "name": "Estopa",
     "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/author/estopa.jpg", 
     "foundation_year": 1999, 
-    "music_type": "Rumba, Flamenco y Pop Rock",   
-    "description": "Estopa es un dúo español de rumba catalana formado por los hermanos David y José Manuel Muñoz. Creado el 18 de octubre de 1999, el grupo es natural de la ciudad de Cornellà de Llobregat, Provincia de Barcelona.​ Con su primer disco consiguieron ventas superiores a 1.000.000 de copias, logrando así el reconocimiento en su país natal y después en países americanos como Chile, Argentina, México, Colombia y Venezuela. Han vendido más de 4 millones de discos en el ámbito nacional e internacional.",
+    "music_type": "Rumba, flamenco y pop rock",   
+    "description": "Estopa es un dúo español de rumba catalana formado por los hermanos David y José Manuel Muñoz. Creado el 18 de octubre de 1999, el grupo es natural de la ciudad de Cornellà de Llobregat, Provincia de Barcelona. Con su primer disco consiguieron ventas superiores a 1.000.000 de copias, logrando así el reconocimiento en su país natal y después en países americanos como Chile, Argentina, México, Colombia y Venezuela. Han vendido más de 4 millones de discos en el ámbito nacional e internacional.",
     "music_list": "https://open.spotify.com/search/estopa"    
   },
   {
     "_id": "0002",
     "name": "La Oreja de Van Gogh",
-    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/author/estopa.jpg", 
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/author/laorejadeVanGogh.jpg", 
     "foundation_year": 1996, 
-    "music_type": "Pop, pop rock, electro pop, balada",   
+    "music_type": "Pop, pop rock, electro pop y balada",   
     "description": "La Oreja de Van Gogh es un grupo musical de género pop rock originario de San Sebastián, País Vasco, España. Su trayectoria en el mundo de la música comenzó formalmente en 1996. La banda está formada por Pablo Benegas, Álvaro Fuentes, Xabi San Martín, Haritz Garde y Leire Martínez, aunque la vocalista durante los primeros once años fue Amaia Montero, quien en 2007 dejó la formación para iniciar su carrera como solista.",
     "music_list": "https://open.spotify.com/search/la%20orjea%20de%20van%20gogh"
   },
   {
     "_id": "0003",
     "name": "Pignoise",
-    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/author/estopa.jpg", 
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/author/pignoise.jpg", 
     "foundation_year": 2002, 
     "music_type": "Pop punk",   
     "description": "Pignoise es una banda de pop punk originaria de Madrid, España, formada en el año 2002. La banda está compuesta por Álvaro Benito, Pablo Alonso y Héctor Polo. Se dieron a conocer en la escena musical española con su álbum debut 'Anunciado en Televisión' en 2003, el cual incluía éxitos como 'Nada que perder' y 'Te entiendo'. A lo largo de su carrera, Pignoise ha mantenido un sonido característico que combina melodías pegajosas con letras directas y emotivas. Aunque han tenido cambios en su formación y han explorado diferentes estilos musicales, continúan siendo reconocidos por su energía en el escenario y su conexión con el público.",
-    "music_list": "https://open.spotify.com/search/Pignoise"
+    "music_list": "https://open.spotify.com/search/pignoise"
+  },
+  {
+    "_id": "0004",
+    "name": "Maná",
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/author/mana.jpg", 
+    "foundation_year": 1981, 
+    "music_type": "Rock, pop y pop-rock latino",   
+    "description": "Maná es una banda de rock en español de Guadalajara, México, fundada en 1986. Los miembros principales son Fher Olvera, Juan Calleros, Alejandro González y Sergio Vallín. Se hicieron famosos con el álbum '¿Dónde Jugarán los Niños?' (1992), que incluye éxitos como 'Oye Mi Amor' y 'Vivir Sin Aire'. Han lanzado varios álbumes exitosos, como 'Sueños Líquidos' y 'Amar es Combatir', y han ganado múltiples premios Grammy y Grammy Latino, siendo una de las bandas más icónicas del rock en español.",
+    "music_list": "https://open.spotify.com/search/mana"
+  },
+  {
+    "_id": "0005",
+    "name": "Kany García",
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/author/kanygarcia.jpg",
+    "foundation_year": 2004, 
+    "music_type": "Pop latino, soft rock y balada",   
+    "description": "Kany García es una cantautora puertorriqueña nacida el 25 de septiembre de 1982 en Toa Baja, Puerto Rico. Debutó en 2007 con el álbum 'Cualquier Día', que incluye éxitos como 'Hoy Ya Me Voy'. Ha lanzado varios álbumes exitosos, como 'Limonada' (2016) y 'Mesa Para Dos' (2020). Ha ganado múltiples premios Grammy Latino y es conocida por sus letras profundas y emotivas, abordando temas de amor y justicia social.",
+    "music_list": "https://open.spotify.com/search/kany%20garcia"
+  },
+   {
+    "_id": "0006",
+    "name": "Marc Anthony",
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/author/marcanthony.jpg",
+    "foundation_year": 1968, 
+    "music_type": "Salsa, música latina y pop",   
+    "description": "Marc Anthony, nacido Marco Antonio Muñiz, es un cantante, compositor y actor estadounidense de ascendencia puertorriqueña. Reconocido por su versatilidad vocal, ha destacado en géneros como la salsa, el pop y las baladas. Su carrera despegó en la década de 1990 con álbumes exitosos como 'Otra Nota' y 'Todo a su tiempo', consolidándose como una figura icónica de la música latina. A lo largo de los años, ha vendido millones de discos, ganado numerosos premios Grammy y Latin Grammy, y ha dejado una marca indeleble en la escena musical internacional. Su influencia trasciende la música, incursionando con éxito en el cine y la televisión.",
+    "music_list": "https://open.spotify.com/search/marc%20anthony"
+  },
+   {
+    "_id": "0007",
+    "name": "Efecto Pasillo",
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/author/efectopasillo.jpg",
+    "foundation_year": 2007, 
+    "music_type": "Pop rock, funk rock, pop latino y rock alternativo",   
+    "description": "Efecto Pasillo es una banda española formada en las Islas Canarias en 2007. Su música combina pop, rock, reggae y ritmos latinos. Se dieron a conocer con el éxito 'Chacho' en 2010, y desde entonces han lanzado varios álbumes y sencillos que han ganado popularidad en España y más allá. Con letras positivas y pegajosas, así como actuaciones en vivo llenas de energía, Efecto Pasillo sigue siendo una fuerza destacada en la escena musical contemporánea.",
+    "music_list": "https://open.spotify.com/search/efecto%20pasillo"
+  },
+  {
+    "_id": "0008",
+    "name": "Juanes",
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/author/juanes.jpg",
+    "foundation_year": 1987, 
+    "music_type": "Pop-rock, funk rock, pop latino y rock alternativo",   
+    "description": "Juanes es un destacado cantante, compositor y músico colombiano nacido en Medellín en 1972. Comenzó su carrera como parte de la banda Ekhymosis antes de lanzarse como solista en 2000. Su música fusiona rock, pop y folclore colombiano, con letras que abordan temas sociales y políticos. Ha lanzado varios álbumes aclamados, como 'Fíjate Bien' y 'Mi Sangre', ganando numerosos premios Grammy y Grammy Latino. Juanes también es reconocido por su labor humanitaria y activismo social, siendo una figura influyente en la cultura latinoamericana.",
+    "music_list": "https://open.spotify.com/search/juanes"
+  },
+  {
+    "_id": "0009",
+    "name": "Melendi",
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/author/melendi.jpg",
+    "foundation_year": 2001, 
+    "music_type": "Pop, rumba, pop-rock, flamenco y balada",   
+    "description": "Melendi es un cantante, compositor y músico español nacido en Oviedo en 1979. Reconocido por su estilo fresco y desenfadado que fusiona el pop, el rock y el folk, ha ganado popularidad con álbumes como 'Sin noticias de Holanda' y 'Quítate las gafas'. Sus letras, emotivas y autobiográficas, abordan temas como el amor y las experiencias personales. Además de su éxito musical, Melendi es conocido por su carisma y cercanía con sus seguidores, participando en programas de televisión y realizando giras exitosas.",
+    "music_list": "https://open.spotify.com/search/melendi"
+  },
+   {
+    "_id": "0010",
+    "name": "Shakira",
+    "image": "https://raw.githubusercontent.com/JDxy/Canary-Sphere-Sound-App-Images/main/author/shakira.jpg",
+    "foundation_year": 1990, 
+    "music_type": "Pop latino, música de baile, reggaetón y rock latino",   
+    "description": "Shakira es una cantante, compositora, bailarina y empresaria colombiana nacida en 1977 en Barranquilla. Se destacó en la década de 1990 con álbumes en español como 'Pies Descalzos' y '¿Dónde Están los Ladrones?'. Su salto al éxito internacional llegó con 'Laundry Service' en 2001, con el hit 'Whenever, Wherever'. Con una voz distintiva y una fusión única de estilos musicales, ha vendido millones de discos y ganado numerosos premios Grammy y Latin Grammy. Además de su éxito musical, es conocida por su labor filantrópica como embajadora de buena voluntad de UNICEF y fundadora de la Fundación Pies Descalzos. Su impacto trasciende la música, convirtiéndola en una figura influyente a nivel mundial.",
+    "music_list": "https://open.spotify.com/search/shakira"
   }
 ])
 
